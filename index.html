@@ -3,7 +3,7 @@
 
 <head>
     <title>Coloursplash</title>
-    <link rel="icon" href="images/icon-96x96.png" type="image/x-icon">
+    <link rel="icon" href="images/icon-32x32.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
@@ -14,34 +14,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <div class="logoholder"><img src="images/icon-64x64.png" alt="" title=""></div>
-        <span class="headertitle">Coloursplash</span>
-        <div class="headerright"></div>
-        <a class="toplink" href="#about">.about()</a>
-        <a class="toplink" href="#mei">.mei()</a>
-        <a class="toplink" href="#projects">.projects()</a>
+        <div class="nav-bar">
+            <img src="images/icon-64x64.png">
+            <div class="text">Coloursplash</div>
+
+            <a href="#projects">.projects()</a>
+            <a href="#mei">.mei()</a>
+            <a href="#about">.about()</a>
+
+        </div>
     </header>
 
     <main>
-        <span class="codebackground" id="codebackground">
-            <p>private void updateMenuLayout() {<br>
-                &#8195;final MenuLayout base = (MenuLayout) findViewById(R.id.menuLayout);<br>
-                &#8195;NewUIColour nuic = new RGBA(125, 232, 48, 1.0f);<br>
-                &#8195;if (alphaTransparency != 1) {<br>
-                &#8195;&#8195;nuic.alpha = alphaTransparency<br />
-                &#8195;}<br />
-                &#8195;base.setBaseColour(nuic);<br>
-                }</p>
-        </span>
+        <div class="title-container">
+            <span class="title">Coloursplash</span>
+            <span class="subtitle">This is my website!</span>
+            <a href="coloursplash.net/github"><i class="fa fa-github"></i> GitHub</a>
+        </div>
 
-        <div class="containertitles">
-            <span id="title" class="title">Developer64</span>
-            <span class="subtitle">Welcome to my website!</span>
-            <a class="sublink"><i class="fa-github"></i> GitHub</a>
+        <div class="title-container">
+            <span class="title">Mei</span>
+            <span class="subtitle">Mei is a custom scripted Discord bot, designed to keep your Discord friendly, safe from nuking and botting, and fun.</span>
+            <a href="https://mei.coloursplash.net/">Click here to visit the Mei website</a>
+        </div>
         </div>
     </main>
 </body>
