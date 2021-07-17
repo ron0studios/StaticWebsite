@@ -1,5 +1,5 @@
 body {
-    background: url('../images/jungle.jpg') center center no-repeat fixed;
+    background: url("../../images/jungle.jpg") center center no-repeat fixed;
     background-color: #FFFFFF;
     background-size: cover;
     margin: 0;
@@ -7,14 +7,14 @@ body {
 }
 
 header {
-	height: 84px;
-	width: 100%;
-	background: rgba(255, 255, 255, 0);
-	display: flex;
-	position: fixed;
-	top: 0;
-	/** backdrop-filter: blur(4px); **/
-	z-index: 10;
+    height: 84px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    position: fixed;
+    top: 0;
+    /** backdrop-filter: blur(4px); **/
+    z-index: 10;
 }
 
 header .logoholder {
@@ -22,7 +22,7 @@ header .logoholder {
     display: block;
     text-align: left;
     padding-left: 6px;
-    padding-top: 6px;  
+    padding-top: 6px;
 }
 
 header .headertitle {
@@ -39,55 +39,55 @@ header .headertitle {
 }
 
 header .headerright {
-	height: 50px;
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header .toplink {
-	color: #FFFFFF;
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	letter-spacing: 1.3px;
-	outline: none;
-	background: rgba(255, 255, 255, 0);
-	border: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    border: none;
     margin-left: 12px;
-	margin-right: 12px;
+    margin-right: 12px;
     margin-top: 20px;
     display: block;
 }
 
-header .toplink:link{
+header .toplink:link {
     text-decoration: none;
 }
 
-header .toplink:visited{
+header .toplink:visited {
     text-decoration: none;
 }
 
-header .toplink:hover{
+header .toplink:hover {
     text-decoration: none;
 }
 
-header .toplink:active{
+header .toplink:active {
     text-decoration: none;
 }
 
 .codebackground {
-	color: rgba(255, 255, 255, 0.3);
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	letter-spacing: 1.3px;
-	position: absolute;
-	z-index: -1;
-	display: block;
-	text-align: left;
-	bottom: 0;
-	left: 0;
-	margin-bottom: 32px;
-	margin-left: 32px;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 32px;
+    margin-left: 32px;
 }
 
 .title {
@@ -101,7 +101,7 @@ header .toplink:active{
 .subtitle {
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-    font-size: 20   px;
+    font-size: 20 px;
     letter-spacing: 1.4px;
     display: block;
     margin-top: 8px;
