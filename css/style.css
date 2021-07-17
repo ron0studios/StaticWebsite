@@ -1,0 +1,20 @@
+body {
+    background: url('../images/jungle.jpg') center center no-repeat fixed;
+    background-color: #FFFFFF;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.headertitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 18px;
+    font-size: 64px;
+}
