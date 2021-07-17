@@ -7,30 +7,30 @@ body {
 }
 
 header {
-	height: 50px;
+	height: 84px;
 	width: 100%;
 	background: rgba(255, 255, 255, 0);
 	display: flex;
 	position: fixed;
 	top: 0;
-	backdrop-filter: blur(4px);
+	/** backdrop-filter: blur(4px); **/
 	z-index: 10;
 }
 
 header .logoholder {
-    width: 10%;
+    width: 64px;
     display: block;
     text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;  
+    padding-left: 6px;
+    padding-top: 6px;  
 }
 
 header .headertitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: #FFFFFF;
     height: 50px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -51,12 +51,12 @@ header .toplink {
 	font-size: 20px;
 	letter-spacing: 1.3px;
 	outline: none;
-	display: block;
 	background: rgba(255, 255, 255, 0);
 	border: none;
-	margin-left: 12px;
+    margin-left: 12px;
 	margin-right: 12px;
     margin-top: 20px;
+    display: block;
 }
 
 header .toplink:link{
