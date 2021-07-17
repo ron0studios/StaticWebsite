@@ -6,7 +6,26 @@ body {
     padding: 0;
 }
 
-.headertitle {
+header {
+	height: 50px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0);
+	display: flex;
+	position: fixed;
+	top: 0;
+	backdrop-filter: blur(4px);
+	z-index: 10;
+}
+
+header .logoholder {
+    width: 10%;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;  
+}
+
+header .headertitle {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
@@ -16,5 +35,85 @@ body {
     align-items: center;
     text-align: center;
     margin-left: 18px;
+    margin-top: 20px;
+}
+
+header .headerright {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+header .toplink {
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	letter-spacing: 1.3px;
+	outline: none;
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	border: none;
+	margin-left: 12px;
+	margin-right: 12px;
+    margin-top: 20px;
+}
+
+header .toplink:link{
+    text-decoration: none;
+}
+
+header .toplink:visited{
+    text-decoration: none;
+}
+
+header .toplink:hover{
+    text-decoration: none;
+}
+
+header .toplink:active{
+    text-decoration: none;
+}
+
+.codebackground {
+	color: rgba(255, 255, 255, 0.3);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1.3px;
+	position: absolute;
+	z-index: -1;
+	display: block;
+	text-align: left;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 32px;
+	margin-left: 32px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    /*font : normal 300 64px/1 'Josefin Sans', sans-serif;*/
+    color: #FFFFFF;
     font-size: 64px;
+    display: block;
+}
+
+.subtitle {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20   px;
+    letter-spacing: 1.4px;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+
+.sublink {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.4px;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
