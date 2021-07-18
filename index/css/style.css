@@ -1,3 +1,27 @@
+html {
+	scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 body {
     background: url("../../images/jungle.jpg") center center no-repeat fixed;
     background-size: cover;
@@ -94,6 +118,8 @@ body {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: white;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .title-container a:link {
@@ -110,4 +136,15 @@ body {
 
 .title-container a:visited {
     text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
 }
