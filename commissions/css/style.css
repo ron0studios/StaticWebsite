@@ -1,0 +1,15 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background: url("../../images/jungle.jpg") center center no-repeat fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.commissions {
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.7);
+}
