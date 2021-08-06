@@ -81,7 +81,7 @@ body {
     font-size: 64px;
     display: block;
 }
-  
+
 .subtitle {
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -125,4 +125,26 @@ footer {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 700px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .title-container a {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
 }
