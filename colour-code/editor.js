@@ -24,7 +24,10 @@ editor.setTheme(localStorage.getItem("theme"));
 editor.setFontSize(localStorage.getItem("fontSize"));
 editor.setHighlightGutterLine(localStorage.getItem("showGutter"));
 
-if (editor.getTheme() === "ace/theme/dracula") {document.getElementById("theme-icon").setAttribute("class", "fa fa-sun");}
+if (localStorage.getItem("theme") === "ace/theme/dracula") {
+    document.getElementById("theme-icon").setAttribute("class", "fa fa-moon");
+    toggle_theme();
+}
 
 editorSession[0] = ace.createEditSession(defaultContent, localStorage.getItem("mode"));
 editor.setSession(editorSession[0]);
@@ -38,4 +41,4 @@ editorSession[7] = ace.createEditSession(defaultContent, localStorage.getItem("m
 editorSession[8] = ace.createEditSession(defaultContent, localStorage.getItem("mode"));
 editorSession[9] = ace.createEditSession(defaultContent, localStorage.getItem("mode"));
 
-document.querySelector("body").style.backgroundImage = 'url("colour-code/img/' + localStorage.getItem("wallpaper") + '.jpg")'
+document.querySelector("body").style.backgroundImage = 'url("colour-code/img/' + localStorage.getItem("wallpaper") + '.jpg")';
