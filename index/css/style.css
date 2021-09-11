@@ -118,6 +118,44 @@ body {
     text-decoration: none;
 }
 
+.blog {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.blog a:link {
+    text-decoration: none;
+}
+
+.blog a:active {
+    text-decoration: none;
+}
+
+.blog a:hover {
+    text-decoration: none;
+}
+
+.blog a:visited {
+    text-decoration: none;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 40px;
+    display: block;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    display: block;
+}
+
 footer {
     width: 100%;
     text-align: center;
