@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    color: #FFFFFF;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     letter-spacing: 1.4px;
@@ -53,14 +53,14 @@ img {
 
 .title {
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
+    color: white;
     font-size: 64px;
     display: block;
     text-align: center;
 }
 
 .subtitle {
-    color: #FFFFFF;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     letter-spacing: 1.4px;
