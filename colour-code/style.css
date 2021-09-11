@@ -1,11 +1,15 @@
 body {
+    --terminal-bg-color: white;
     --button-bg-color: white;
     --border-color: 1px solid #d2d6de;
     --icon-color: black;
     --transition-delay: 0.5s;
     --bar-background-color: linear-gradient(89.81deg, #0678F4 41.01%, #37B2DF 99.64%);
+    height: 100%;
     margin: 0px;
     background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .tab {
@@ -18,10 +22,13 @@ body {
     list-style: none;
 }
 
+.hidden {
+    display: none;
+}
+
 .container {
     width: 75vw;
     height: calc(100vh - 6px);
-    min-width: 450px;
     min-height: 600px;
     padding-left: 15px;
     padding-right: 15px;
@@ -29,10 +36,37 @@ body {
     margin-left: auto;
 }
 
+.container-short {
+    height: calc(66vh + 7px);
+}
+
+.console {
+    width: 75vw;
+    height: calc(33vh);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 1100px) {
+    .console {
+        width: calc(100% - 30px);
+    }
+}
+
+.control-bar {
+    height: 34px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width: 1100px) {
     .container {
         width: calc(100% - 30px);
-    }}
+    }
+}
 
 .button-row-control {
     margin-top: 6px;
@@ -73,6 +107,10 @@ body {
     transition: var(--transition-delay);
 }
 
+.btn-round {
+    border-radius: 4px;
+}
+
 .btn-first {
     border-radius: 4px 0px 0px 4px;
 }
@@ -85,6 +123,12 @@ body {
     margin-left: -5px;
 }
 
+.btn-success {
+    font: 15px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    color: #00a65a;
+    border-color: #00a65a;
+}
+
 .split {
     height: calc(100% - 86px);
 }
@@ -92,7 +136,8 @@ body {
 @media (max-width: 475px) {
     .hide-mobile {
         display: none;
-    }}
+    }
+}
 
 #editor {
     height: 100%;
@@ -162,12 +207,14 @@ a {
     text-decoration: none;
 }
 
-#poptitle, #poptext {
+#poptitle,
+#poptext {
     padding: 10px;
     margin: 0;
 }
 
-#poptitle, #popclose {
+#poptitle,
+#popclose {
     font-size: 28px;
     color: #fff;
 }
@@ -177,4 +224,103 @@ a {
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+#terminal {
+    height: calc(100% - 48px);
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #d2d6de;
+    background-color: var(--terminal-bg-color);
+    transition: var(--transition-delay);
+    border: var(--border-color);
+    margin-top: 6px;
+    border-radius: 4px;
+}
+
+.progress {
+    height: 6px;
+    line-height: 6px;
+    background: #fff;
+    background: var(--terminal-bg-color);
+    transition: var(--transition-delay);
+    margin-bottom: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important
+}
+
+.progress-bar {
+    line-height: 6px;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important
+}
+
+.progress-bar-primary {
+    height: 6px !important
+}
+
+.progress-bar-success {
+    height: 2px !important
+}
+
+.progress-bar-danger {
+    height: 2px !important
+}
+
+.progress-bar-warning {
+    height: 2px !important
+}
+
+.boxed2 {
+    background-color: var(--terminal-bg-color);
+    color: var(--icon-color);
+    transition: var(--transition-delay);
+    border-top: 0;
+    border: 0;
+    height: calc(100% - 6px);
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto
+}
+
+#term-output,
+#term-form,
+#term-input {
+    margin: 0;
+    padding: 0;
+    font-family: Menlo, Monaco, Consolas, courier new, monospace;
+    font-size: 13px;
+    border: none
+}
+
+.wrapper,
+#term-form {
+    height: auto;
+    margin: 0;
+    margin-left: .6rem
+}
+
+.wrapper {
+    margin-top: .4rem
+}
+
+#term-output {
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    display: contents
+}
+
+#term-input {
+    width: 60%;
+    background-color: #fff;
+    color: #000;
+    background-color: var(--terminal-bg-color);
+    color: var(--text-color);
+    transition: var(--transition-delay);
+    margin-top: .2rem
 }

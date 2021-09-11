@@ -75,7 +75,7 @@ print('Welcome to ColourCode! Happy Coding :)')\n\
 \n\
 echo \"Welcome to ColourCode! Happy Coding :)\"\n\
 "};
-    return lang.slice(9) in defaultContent ? defaultContent[lang.slice(9)]: "\nColourCode - the best online IDE";
+    return lang.slice(9) in defaultContent ? defaultContent[lang.slice(9)]: "\n// ColourCode - the best online IDE";
 }
 
 function show_ace_settings() {
@@ -100,6 +100,7 @@ function toggle_theme() {
         document.querySelector("body").style.setProperty("--button-bg-color", "#282a36");
         document.querySelector("body").style.setProperty("--border-color", "1px solid black");
         document.querySelector("body").style.setProperty("--icon-color", "white");
+        document.querySelector("body").style.setProperty("--terminal-bg-color", "#282a36");
     } else {
         icon.setAttribute("class", "fa fa-moon");
         editor.setTheme("ace/theme/textmate");
@@ -108,6 +109,7 @@ function toggle_theme() {
         document.querySelector("body").style.setProperty("--button-bg-color", "white");
         document.querySelector("body").style.setProperty("--border-color", "1px solid #d2d6de");
         document.querySelector("body").style.setProperty("--icon-color", "black");
+        document.querySelector("body").style.setProperty("--terminal-bg-color", "white");
     }
 
     theme = document.getElementById("theme-icon").getAttribute("class") === "fa fa-moon" ? "light": "dark";
@@ -161,4 +163,23 @@ function change_tab(tabId) {
     // TabId will be one higher than the editorSession index
     editor.setSession(editorSession[tabId - 1]);
     document.getElementById("tab-identifier").innerHTML = "Tab " + tabId;
+}
+
+function set_template() {
+    editor.setValue(get_default_content(localStorage.getItem("mode")));
+}
+
+function toggle_terminal() {
+    terminalBtn = document.getElementById("terminal-btn");
+    console = document.getElementById("console");
+    container = document.getElementById("container");
+    if (terminalBtn.classList.contains("active")) {
+        terminalBtn.classList.remove("active");
+        console.classList.add("hidden");
+        container.classList.remove("container-short");
+    } else {
+        terminalBtn.classList.add("active");
+        console.classList.remove("hidden");
+        container.classList.add("container-short");
+    }
 }

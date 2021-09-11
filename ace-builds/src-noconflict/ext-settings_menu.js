@@ -758,8 +758,6 @@ var OptionPanel = function(editor, element) {
     };
     
     this.setOption = function(option, value) {
-        console.log(option.path);
-        console.log(typeof option.path);
         var loggableOptions = ["theme", "mode", "fontSize", "showGutter"];
 	if (loggableOptions.includes(option.path)) {
             localStorage.setItem(option.path, value);

@@ -25,8 +25,13 @@ editor.setFontSize(localStorage.getItem("fontSize"));
 editor.setHighlightGutterLine(localStorage.getItem("showGutter"));
 
 if (localStorage.getItem("theme") === "ace/theme/dracula") {
-    document.getElementById("theme-icon").setAttribute("class", "fa fa-moon");
-    toggle_theme();
+    document.getElementById("theme-icon").setAttribute("class", "fa fa-sun");
+    editor.setTheme("ace/theme/dracula");
+
+    document.querySelector("body").style.setProperty("--button-bg-color", "#282a36");
+    document.querySelector("body").style.setProperty("--border-color", "1px solid black");
+    document.querySelector("body").style.setProperty("--icon-color", "white");
+    document.querySelector("body").style.setProperty("--terminal-bg-color", "#282a36");
 }
 
 editorSession[0] = ace.createEditSession(defaultContent, localStorage.getItem("mode"));
