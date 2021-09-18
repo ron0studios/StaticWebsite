@@ -8,12 +8,12 @@
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
     <!-- General Stylesheet-->
-    <link href="index/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="blog/blog/css/style.css" type="text/css" rel="stylesheet" media="screen" />
 
-    <!-- Roboto Font -->
+    <!-- Source Code Pro -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,19 +24,22 @@
         <div class="nav-bar">
             <img src="images/icon-64x64.png">
             <div class="text">Coloursplash</div>
+
+            <a href="#blog" class="scroll">Blog</a>
+            <a href="https://www.coloursplash.net/" class="scroll">Home</a>
         </div>
     </header>
 
     <main>
-        <div class="title-container">
-            <span class="title">Blog</span>
-            <span class="subtitle">Guides, progress updates and my random thoughts</span>
-        </div>
+        <h1>// Blog</h1>
+        <h2>## Guides, progress updates and my random thoughts!</h1>
 
-        <div class="blog">
-            <a href="https://www.coloursplash.net/blogs/wireworld" class="name">Wireworld</span>
-            <a href="https://www.coloursplash.net/blogs/wireworld" class="description">How 4 simple rules can simulate an entire computer.</span>
-            <a href="https://www.coloursplash.net/blogs/wireworld" class="description">11:40 11/09/2021</span>
+        <div class="blog-container">
+            <div class="blog-post">
+                <div class="blog-title">## Wireworld</div>
+                <div class="blog-date">Posted on September, 11th 2021</div>
+                <button class="read-more" onclick="window.location.href='https://www.coloursplash.net/blog/wireworld';">Read More...</button>
+            </div>
         </div>
     </main>
 
