@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url("../../images/jungle.jpg") center center no-repeat fixed;
+    background: url("../img/background.jpg") center center no-repeat fixed;
     background-size: cover;
     margin: 0px;
     padding: 0px;
