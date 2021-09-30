@@ -18,9 +18,14 @@ function try_run() {
 }
 
 function run_code() {
+    var startTime = new Date().getTime();
+
     // Create a new 30,000 size array, with each cell initialized with the value of 0. Memory can expand.
     const MEMORY_SIZE = Number(document.getElementById("memory_size").value);
     const memory = new Array(MEMORY_SIZE).fill(0);
+    // Set max generations
+    let currentGen = 1;
+    const GEN_SIZE = Number(document.getElementById("generation_size").value);
     // Instruction pointer (Points to the current INSTRUCTION)
     let ipointer = 0;
     // Memory pointer (Points to a cell in MEMORY)
@@ -35,11 +40,15 @@ function run_code() {
     let output = "";
 
     let end = false;
+    let failed = false;
 
     while (!end) {
+
         switch (program[ipointer]) {
             case '>':
-                if (mpointer == memory.length - 1)
+                if ((mpointer == memory.length - 1) && (document.getElementById("dynamic_memory").value == "on"))
+                    console.log("YES")
+                    // only incress memory array if dynamic memory is on
                     /* If we try to access memory beyond what is currently available, expand array */
                     memory.push(0, 0, 0, 0, 0);
                 mpointer++;
@@ -65,6 +74,7 @@ function run_code() {
                 if (inputPointer <= input.length) {
                     // Get the character code of the first character of the string
                     val = input.charCodeAt(inputPointer);
+                    inputPointer++;
                 }
 
                 memory[mpointer] = val;
@@ -95,12 +105,24 @@ function run_code() {
             default: // We ignore any character that are not part of regular Brainfuck syntax
                 break;
         }
+        currentGen++;
         ipointer++;
+
+        if (currentGen > GEN_SIZE) {
+            end = true;
+            failed = true;
+        }
     }
 
-    console.log(output);
+    if (failed) {
+        statusObj.innerHTML = "Failed: Reached generation limit of " + Number(GEN_SIZE);
+    } else {
+        let endTime = new Date().getTime();
+        let completionTime = endTime - startTime;
 
-    outputConsole.innerHTML = output;
+        outputConsole.innerHTML = output;
+        statusObj.innerHTML = "Finished in " + Number(completionTime) + "ms";
+    }
 }
 
 function minify() {

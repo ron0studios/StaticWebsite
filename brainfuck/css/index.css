@@ -251,7 +251,7 @@ footer {
 
 #output {
     font-family: var(--font);
-    margin-top: 615px;
+    margin-top: 30px;
     color: var(--text);
     height: 180px;
     background-color: var(--bg-color);
@@ -282,4 +282,11 @@ footer {
 
 #input:focus {
     outline: none;
+}
+
+#status {
+    padding-top: 5px;
+    font-family: var(--font);
+    font-size: 1.2em;
+    color: var(--alt-text);
 }

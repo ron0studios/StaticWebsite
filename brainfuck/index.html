@@ -31,16 +31,14 @@
 <body>
     <div class="left">
         <main>
-            <textarea id="editor"><br>
-                WARNING: THIS IS STILL IN PROGRESS<br>
-                LOOPING CRASHES THE WEB PAGE AND MY BLOG POST HASNT BEEN WRITTEN</textarea>
+            <textarea id="editor"></textarea>
         </main>
 
         <div class="btn-bar">
             <div id="run_button" title="ctrl+enter" class="active_button">run</div>
             <div id="stop_button" class="inactive_button">stop</div>
             <div id="minify_button" class="active_button">minify</div>
-            <div id="status"></div>
+            <div id="status">Ready to go!</div>
         </div>
 
         <div id="output"></div>
@@ -86,39 +84,12 @@
         <div class="options">
             <div class="title">Options</div>
             <div class="wrap">
-                Cell size (Bits):
-                <input type="radio" name="cell_size" id="cell_size_8" checked="checked"><label for="cell_size_8"> 8
-                </label>
-                <input type="radio" name="cell_size" id="cell_size_16"><label for="cell_size_16"> 16 </label>
-                <input type="radio" name="cell_size" id="cell_size_32"><label for="cell_size_32"> 32 </label><br>
-
-                <hr>
                 <label for="dynamic_memory">Dynamic (infinite) Memory: </label><input type="checkbox"
                     id="dynamic_memory"><br>
                 <label title="Number of cells" for="memory_size">Memory size:</label> <input type="text" value="30000"
                     id="memory_size"><br>
-
-                Memory overflow behaviour:<br>
-                <input type="radio" name="memory_overflow" id="memory_overflow_undef" checked="checked"> <label
-                    for="memory_overflow_undef"> undefined (fast) </label>
-                <input type="radio" name="memory_overflow" id="memory_overflow_wrap"><label
-                    title="< on first cell goes to last cell and vice versa" for="memory_overflow_wrap"> wrap </label>
-                <input type="radio" name="memory_overflow" id="memory_overflow_abort"><label
-                    for="memory_overflow_abort"> abort </label><br>
-                <hr>
-
-                End of input:
-                <input type="radio" name="eof" id="eof_nochange" checked="checked"><label for="eof_nochange"> no change
-                </label>
-                <input type="radio" name="eof" id="eof_char"><label for="eof_char"> char: </label>
-                <input type="text" id="eof_char_value" value="\n" disabled=""><br>
-
-                <input type="checkbox" id="dump_memory"><label for="dump_memory"> Dump Memory at char: </label>
-                <input type="text" id="dump_memory_char" value="#" disabled=""><br>
-
-                <input type="checkbox" id="count_instructions"><label for="count_instructions"> Count instructions
-                </label><br>
-                <br>
+                    <label title="Generations before timeout" for="generation_size">Generation size:</label> <input type="text" value="30000"
+                    id="generation_size">
             </div>
         </div>
     </div>
