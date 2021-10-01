@@ -140,12 +140,6 @@ footer {
     font-family: var(--font);
 }
 
-.about .email {
-    font-size: 0.6em;
-    background-color: #fff;
-    color: var(--alt-text)
-}
-
 .about ul {
     padding: 0px;
     margin: 0px;
@@ -227,7 +221,21 @@ footer {
     margin-top: 555px;
 }
 
-.inactive_button, .active_button {
+.inactive_button {
+    background-color: #999;
+    cursor: default;
+    font-family: var(--font);
+    color: var(--alt-text);
+    border: 3px solid var(--bg-color);
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1em;
+    float: left;
+    user-select: none;
+}
+
+.active_button {
     font-family: var(--font);
     color: var(--alt-text);
     border: 3px solid var(--bg-color);
@@ -238,15 +246,7 @@ footer {
     font-size: 1em;
     float: left;
     user-select: none;
-}
-
-.active_button {
     cursor: pointer;
-}
-
-.inactive_button {
-    background-color: #999;
-    cursor: default;
 }
 
 #output {
@@ -289,4 +289,5 @@ footer {
     font-family: var(--font);
     font-size: 1.2em;
     color: var(--alt-text);
+    font-weight: bold;
 }
