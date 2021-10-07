@@ -18,9 +18,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <meta name="description" content="Coloursplash - Programmer / Artist / Game designer - Blogs, projects and commissions.">
-    <meta name="keywords"
-        content="coloursplash, coloursplash.net, colorsplash, colour splash">
+    <meta name="description"
+        content="Coloursplash - Programmer / Artist / Game designer - Blogs, projects and commissions.">
+    <meta name="keywords" content="coloursplash, coloursplash.net, colorsplash, colour splash">
     <meta name="author" content="Coloursplash">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -46,32 +46,39 @@
     <main>
         <div class="title-container" id="about">
             <span class="title">Coloursplash</span>
-            <span class="subtitle">Programmer / Artist / Game designer<br />Contact:
-                <b>coloursplashbusiness@gmail.com</b></span>
-            <a href="https://www.coloursplash.net/github"><i class="fa fa-github"></i> GitHub</a>
+            <span class="subtitle">Programmer / Artist / Game designer<br>Contact:
+                <b class="email">coloursplashbusiness@gmail.com</b></span>
+            <a href="/github"><i class="fa fa-github"></i> GitHub</a>
             <a href="https://www.coloursplash.net/todo"><i class="fa fa-list-ul"></i> Todo list</a>
         </div>
 
         <div class="title-container" id="blog">
             <span class="title">Blog</span>
-            <span class="subtitle">I post progress on my projects and how they work, as well as other subjects I find interesting.</span>
+            <span class="subtitle">I post progress on my projects and how they work, as well as other subjects I find
+                interesting.</span>
             <a href="https://www.coloursplash.net/blog"><i class="fa fa-book"></i> Blog</a>
         </div>
 
-        <div class="title-container" id="projects">
-            <span class="title">ColourCode</span>
-            <span class="subtitle">ColourCode is an online code-editor packed with features and amazing UI.</span>
-            <a href="https://www.coloursplash.net/code"><i class="fa fa-code"></i> ColourCode</a>
+        <div class="projects-container" id="projects">
+            <span class="title">Projects</span>
+            <div class="project" onclick="window.location.href='/code';">
+                <img src="index/img/colour-code-preview.png" class="preview-project">
+                <h2><i class="fa fa-code"></i> ColourCode</h2>
+                <p>ColourCode is an online code-editor packed with features and amazing UI.</p>
+            </div>
 
-            <span class="title">Brainfuck</span>
-            <span class="subtitle">Run and debug your Brainfuck code here.</span>
-            <a href="https://www.coloursplash.net/brainfuck/"><i class="fa fa-asterisk"></i> Brainfuck</a>
-        </div>
 
-        <div class="title-container" id="projects">
-            <span class="title">Simulations</span>
-            <span class="subtitle">Online simulations and cellular automata to play around with.</span>
-            <a href="https://www.coloursplash.net/simulation/wireworld">Wireworld</a>
+            <div class="project" onclick="window.location.href='/brainfuck/';">
+                <img src="index/img/brainfuck-preview.png" class="preview-project">
+                <h2><i class="fa fa-asterisk"></i> Brainfuck</h2>
+                <p>Run and debug your Brainfuck code here.</p>
+            </div>
+
+            <div class="project" onclick="window.location.href='/brainfuck/';">
+                <img src="index/img/wireworld-preview.png" class="preview-project">
+                <h2><i class="fa fa-globe-europe"></i> Wireworld</h2>
+                <p>Recreate logic gates with wires and electrons.</p>
+            </div>
         </div>
 
         <div class="title-container" id="socials">
