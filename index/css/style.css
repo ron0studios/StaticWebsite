@@ -12,6 +12,12 @@ body {
 .nav-bar {
     width: 100%;
     height: 52px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 150%);
+    position: fixed;
+    top: 0px;
+}
+
 }
 
 .nav-bar img {
@@ -167,6 +173,10 @@ footer {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 150%);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .projects-container {
